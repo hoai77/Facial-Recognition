@@ -1,0 +1,11 @@
+https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
+  -for locating the face (encompassing it into a square), and marking facial features on the face to compare to
+ http://dlib.net/face_recognition.py.html
+  -and "how to" work with dlib
+https://www.pyimagesearch.com/2020/04/13/opencv-age-detection-with-deep-learning/
+  -potential ways to detect age
+  -one possible is cascades (opencv)
+ https://pypi.org/project/py-agender/
+  -can detect age and gender
+  -may not be as accurate as other applications though
+  
