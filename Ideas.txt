@@ -1,3 +1,5 @@
+https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/
+
 https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
   -for locating the face (encompassing it into a square), and marking facial features on the face to compare to
  http://dlib.net/face_recognition.py.html
