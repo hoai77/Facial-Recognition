@@ -8,4 +8,19 @@ https://www.pyimagesearch.com/2020/04/13/opencv-age-detection-with-deep-learning
  https://pypi.org/project/py-agender/
   -can detect age and gender
   -may not be as accurate as other applications though
-  
+
+https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/
+
+Basic dlib model:
+- maps an image to a 128 dim vector space
+- calculates euclidean distance between target and inputted image
+  - if the distance is < 0.6 it is determined to be a match
+
+Neural network:
+- weights for various facial features are adjusted based on importance
+- each vector starts as a unit vector and after training, becomes an adjusted 128 - component vector
+- each component represents probabilitistic outcomes in proximity to different images
+
+Variations:
+- can adjust the ML model we use to train the data (maybe use scikit-learn's SVM implementation instead of dlib's provided one)
+- can vary how many times the model is resampled (increasing this is a multiplier for time needed to run the model)
