@@ -9,6 +9,8 @@ def main():
 
 if __name__ == '__main__': from flask import Flask, request, render_template, flash, redirect, url_for, send_from_directory
 from recognize import main
+from detect_age import age
+from detect_gender import gender
 from werkzeug.utils import secure_filename
 import os
 import urllib.request
@@ -60,9 +62,12 @@ def home():
                 content=image_file.read()
             """
             name,probability_name= main(filename)
+            age_range,probability_age = age(filename)
+            gender_range,probability_gender = gender(filename)
             text = name + ", " + str(probability_name)
-            print(name,probability_name)
-            return render_template('index.html',imgURL=filename, text = text)
+            age_text = age_range + ", " + str(probability_age)
+            gender_text = gender_range + ", " + str(probability_gender)
+            return render_template('index.html',imgURL=filename, text = text, age_text = age_text, gender_text = gender_text)
     return render_template('index.html')
 
 @app.route('/uploads/<filename>')
