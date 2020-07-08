@@ -21,8 +21,8 @@ def age(image_name):
 	#args = vars(ap.parse_args())
 
 	# define the list of age buckets our age detector will predict
-	AGE_BUCKETS = ["(15-20)", "(21-26)", "(27-32)", "(33-42)", 
-		"(43-53)", "(54-63)", "(64-85)", "(86-100)"]
+	AGE_BUCKETS = ["(15-20)", "(23-30)", "(33-40)", "(43-50)", 
+		"(53-60)", "(63-70)", "(73-80)", "(83-100)"]
 
 	# load our serialized face detector model from disk
 	print("[INFO] loading face detector model...")
