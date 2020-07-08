@@ -1,5 +1,5 @@
 # USAGE
-# python detect_age.py --image images/adrian.png --face face_detector --age age_detector
+# python3 detect_gender.py --image images/adrian.png --face face_detection_model --gender gender_detector
 
 # import the necessary packages
 import numpy as np
@@ -19,7 +19,7 @@ ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
 args = vars(ap.parse_args())
 
-# define the list of age buckets our age detector will predict
+# define the list of gender buckets our gender detector will predict
 GENDER_BUCKETS = ["MALE", "FEMALE"]
 
 # load our serialized face detector model from disk
@@ -67,7 +67,7 @@ for i in range(0, detections.shape[2]):
 			(78.4263377603, 87.7689143744, 114.895847746),
 			swapRB=False)
 
-		# make predictions on the age and find the age bucket with
+		# make predictions on the gender and find the gender bucket with
 		# the largest corresponding probability
 		ageNet.setInput(faceBlob)
 		preds = ageNet.forward()

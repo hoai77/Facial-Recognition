@@ -1,5 +1,5 @@
 # USAGE
-# python detect_age.py --image images/adrian.png --face face_detector --age age_detector
+# python3 detect_age.py --image images/adrian.png --face face_detection_model --age age_detector
 
 # import the necessary packages
 import numpy as np
