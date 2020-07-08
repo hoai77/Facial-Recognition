@@ -13,7 +13,7 @@ ap.add_argument("-i", "--image", required=True,
 	help="path to input image")
 ap.add_argument("-f", "--face", required=True,
 	help="path to face detector model directory")
-ap.add_argument("-a", "--gender", required=True,
+ap.add_argument("-g", "--gender", required=True,
 	help="path to gender detector model directory")
 ap.add_argument("-c", "--confidence", type=float, default=0.5,
 	help="minimum probability to filter weak detections")
