@@ -12,8 +12,8 @@ import os
 
 def detect_and_predict_age(frame, faceNet, ageNet, minConf=0.5):
 	# define the list of age buckets our age detector will predict
-	AGE_BUCKETS = ["(0-2)", "(4-6)", "(8-12)", "(15-20)", "(25-32)",
-		"(38-43)", "(48-53)", "(60-100)"]
+	AGE_BUCKETS = ["(15-20)", "(21-26)", "(27-32)", "(33-42)",
+		"(43-53)", "(54-63)", "(64-85)", "(86-100)"]
 
 	# initialize our results list
 	results = []
