@@ -17,6 +17,7 @@ $python3 train_model.py --embeddings output/embeddings.pickle \
   
 Activate UI:
 $python3 app.py
+Navigate to link, and upload a photo
 
 For video streaming: 
 $python3 recognize_video.py --detector face_detection_model \
